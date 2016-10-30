@@ -25,17 +25,19 @@
 
 .page-global,
 .well-global {
+    
     box-shadow: $shadow-normal;
     background: #fff;
-    margin-bottom: 2rem;
-    padding: 3rem;
+    margin-bottom: 1.5rem;
+    padding: 2rem;
     @media screen and (max-width: 64rem) {
-        margin-bottom: 1rem;
-        padding: 1.5rem;
+        margin-bottom: .75rem;
+        padding: 1rem;
     }
 
     .page-global-title {
         font-size: 1.5rem;
+        font-family: $font-family-base !important;
     }
 }
 

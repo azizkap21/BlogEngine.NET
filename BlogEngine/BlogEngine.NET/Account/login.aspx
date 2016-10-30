@@ -11,12 +11,12 @@
             </h1>
             <div class="account-body">
                 <div class="form-group">
-                    <label>Username</label>
-                    <asp:TextBox ID="UserName" runat="server" AutoCompleteType="None" CssClass="textEntry ltr-dir"></asp:TextBox>
+                    <label>User Name</label>
+                    <asp:TextBox ID="UserName" runat="server" AutoCompleteType="None" CssClass="textEntry ltr-dir" place-holder="User Name"></asp:TextBox>
                 </div>
                 <div class="form-group">
                     <label>Password</label>
-                    <asp:TextBox ID="Password" runat="server" CssClass="passwordEntry ltr-dir" TextMode="Password"></asp:TextBox>
+                    <asp:TextBox ID="Password" runat="server" CssClass="passwordEntry ltr-dir" TextMode="Password" place-holder="Password"></asp:TextBox>
                 </div>
                 <div class="form-group with-icon">
                     <span class="icon-form-group">

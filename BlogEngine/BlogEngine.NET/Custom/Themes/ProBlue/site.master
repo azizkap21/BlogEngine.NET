@@ -1,0 +1,98 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="site.master.cs" Inherits="StandardSite" %>
+<%@ Import Namespace="BlogEngine.Core" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head runat="server" profile="http://gmpg.org/xfn/11">
+    <title></title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="shortcut icon" href="~/pics/favicon.ico" type="image/x-icon"/>
+</head>
+<body>  
+  <form runat="Server">
+    <div id="veryTopHeader">
+    <div id="verytopHeaderContainer">
+    <div style="position: absolute; top: -20px; left: 810px;">
+    <span runat="server" id="aUser"></span>&nbsp;&nbsp;<a runat="server" id="aLogin" />
+    </div>
+    </div>
+    </div>
+    <!--TopHeader-->
+    <div id="topHeader">
+    <div id="topHeaderContainer">
+    <div class="logo">
+    </div>
+    <div class="header">
+    <h1><a href="<%=Utils.AbsoluteWebRoot %>"><%=BlogSettings.Instance.Name %></a></h1>
+    <span><%=BlogSettings.Instance.Description %></span>
+  </div>
+    </div>
+    </div>
+    <!--Masthead-->
+    <div id="mastHead">
+    <div class="mastHeadContainer">
+    <!--Navigation-->
+    <asp:ContentPlaceHolder ID="cphNavigation" runat="server">
+    <div id="navigation">
+    <div class="navigationContainer">
+    <div>
+        <ul class="navLinkList">
+        <!--Change to hyperlink controls-->
+            <li class="navLink"><div class="navLinkContainer"><a class="navigation" href="<%=Utils.AbsoluteWebRoot %>" rel="home"><%=Resources.labels.home %></a></div></li>
+            <li class="navLink"><div class="navLinkContainer"><a class="navigation" href="<%=Utils.AbsoluteWebRoot %>archive.aspx"><%=Resources.labels.archive %></a></div></li>
+            <li class="navLink"><div class="navLinkContainer"><a class="navigation" href="<%=Utils.AbsoluteWebRoot %>contact.aspx"><%=Resources.labels.contact %></a></div></li>
+            <li class="navLink"><div class="navLinkContainer"><a class="navigation"  href="<%=Utils.FeedUrl %>"><%=Resources.labels.subscribe %></a></div></li>
+        </ul>
+    </div>
+    </div>
+    </div>
+    </asp:ContentPlaceHolder>
+    <!--End Navigation Section-->
+    </div>
+    <!--End Masthead Container-->
+    
+    </div>
+    <!--End Masthead-->
+
+    <!--Body Top-->
+    <div id="body_top">
+    <!--Container-->
+    <div id="body_top_header">
+    <div class="body_top_bg">
+    </div>
+    </div>
+    <div id="body_top_container">
+
+    <!--Start Dynamic Table-->
+    <table id="body_top_dynamic">
+    <tr>
+    <td>
+    <blog:SearchOnSearch runat="server" MaxResults="3" Headline="You searched for" Text="Here are some results for the search term on this website" />
+    <div id="body_left">
+    <asp:ContentPlaceHolder id="cphBody" runat="server">
+    </asp:ContentPlaceHolder>
+    </div>
+    <div id="body_right">
+    <blog:WidgetZone runat="server" ZoneName="be_WIDGET_ZONE" />
+    </div>
+    </td>
+    </tr>
+    </table>
+    </div>
+    <div id="body_bottom_footer">
+    <div class="body_bottom_bg"></div>
+    </div>
+    </div>
+
+    <!--Footer-->
+    <div id="footer">
+    <div class="footer_container">
+    <div style="margin-left: 30px; border-top: 1px solid #c3c1c1; padding-top: 10px; padding-bottom: 10px;">
+     Powered by <a href="http://www.dotnetblogengine.net">BlogEngine.NET</a> <%=BlogSettings.Instance.Version() %>
+     Theme by <a href="http://mpeblog.com/blog/">Matt Pitts</a>
+    </div>
+    </div>
+    </div>    
+  </form>
+</body>
+</html>

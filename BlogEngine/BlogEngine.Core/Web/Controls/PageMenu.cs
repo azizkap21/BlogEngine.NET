@@ -22,6 +22,11 @@ namespace BlogEngine.Core.Web.Controls
         public string Home { get; set; }
 
         /// <summary>
+        /// About label.
+        /// </summary>
+        public string About { get; set; }
+
+        /// <summary>
         /// Contact label.
         /// </summary>
         public string Contact { get; set; }
@@ -64,6 +69,8 @@ namespace BlogEngine.Core.Web.Controls
 
             // items that will be appended to the end of menu list
             AddMenuItem(ul, Contact, Utils.RelativeWebRoot + "contact.aspx");
+
+            AddMenuItem(ul, About, Utils.RelativeWebRoot + "About.aspx");
 
             if (Security.IsAuthenticated)
             {

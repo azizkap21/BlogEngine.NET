@@ -115,8 +115,8 @@ namespace BlogEngine.NET.App_Start
                 .Include("~/Scripts/Q.js")
                 .Include("~/Scripts/angular.min.js")
                 .Include("~/Scripts/angular-route.min.js")
-                .Include("~/Scripts/angular-sanitize.min.js") 
-                            
+                .Include("~/Scripts/angular-sanitize.min.js")
+
                 .Include("~/admin/app/app.js")
                 .Include("~/admin/app/listpager.js")
                 .Include("~/admin/app/grid-helpers.js")
@@ -146,7 +146,8 @@ namespace BlogEngine.NET.App_Start
                 .Include("~/admin/app/settings/settingController.js")
                 .Include("~/admin/app/settings/tools/toolController.js")
                 .Include("~/admin/app/settings/controls/blogrollController.js")
-                .Include("~/admin/app/settings/controls/pingController.js")      
+                .Include("~/admin/app/settings/controls/pingController.js")
+
                 );
 
             bundles.Add(
@@ -155,10 +156,10 @@ namespace BlogEngine.NET.App_Start
                 .Include("~/scripts/jquery.form.js")
                 .Include("~/scripts/jquery.validate.js")
                 .Include("~/scripts/toastr.js")
-                .Include("~/scripts/Q.js")  
+                .Include("~/scripts/Q.js")
                 .Include("~/Scripts/angular.min.js")
                 .Include("~/Scripts/angular-route.min.js")
-                .Include("~/Scripts/angular-sanitize.min.js")                
+                .Include("~/Scripts/angular-sanitize.min.js")
                 .Include("~/scripts/bootstrap.js")
                 .Include("~/scripts/textext.js")
                 .Include("~/scripts/moment.js")
@@ -170,6 +171,9 @@ namespace BlogEngine.NET.App_Start
                 .Include("~/admin/app/editor/filemanagerController.js")
                 .Include("~/admin/app/common.js")
                 .Include("~/admin/app/data-service.js")
+                //.Include("~/admin/editors/ckeditor_4.5/ckeditor.js")
+                //.Include("~/admin/editors/ckeditor_4.5/editor.js")
+                //.Include("~/admin/editors/ckeditor_4.5/styles.js")
                 );
 
             if (BlogConfig.DefaultEditor == "~/admin/editors/bootstrap-wysiwyg/editor.cshtml")
@@ -178,11 +182,30 @@ namespace BlogEngine.NET.App_Start
                 bundles.GetBundleFor("~/scripts/wysiwyg").Include("~/admin/editors/bootstrap-wysiwyg/bootstrap-wysiwyg.js");
                 bundles.GetBundleFor("~/scripts/wysiwyg").Include("~/admin/editors/bootstrap-wysiwyg/editor.js");
             }
-            if (BlogConfig.DefaultEditor == "~/admin/editors/tinymce/editor.cshtml")
+
+            else if (BlogConfig.DefaultEditor == "~/admin/editors/tinymce4/editor.cshtml")
             {
                 // tinymce plugings won't load when compressed. added in post/page editors instead.
-                //bundles.GetBundleFor("~/scripts/wysiwyg").Include("~/admin/editors/tinymce/tinymce.min.js");
-                //bundles.GetBundleFor("~/scripts/wysiwyg").Include("~/admin/editors/tinymce/editor.js");
+                bundles.GetBundleFor("~/scripts/wysiwyg").Include("~/admin/editors/tinymce4/tinymce.min.js");
+                bundles.GetBundleFor("~/scripts/wysiwyg").Include("~/admin/editors/tinymce4/editor.js");
+            }
+            else if (BlogConfig.DefaultEditor == "~/admin/editors/tinymce/editor.cshtml")
+            {
+                // tinymce plugings won't load when compressed. added in post/page editors instead.
+                bundles.GetBundleFor("~/scripts/wysiwyg").Include("~/admin/editors/tinymce/tinymce.min.js");
+                bundles.GetBundleFor("~/scripts/wysiwyg").Include("~/admin/editors/tinymce/editor.js");
+            }
+            else if (BlogConfig.DefaultEditor == "~/admin/editors/ckeditor/editor.cshtml")
+            {
+                bundles.GetBundleFor("~/scripts/wysiwyg").Include("~/admin/editors/ckeditor/ckeditor.js");
+                bundles.GetBundleFor("~/scripts/wysiwyg").Include("~/admin/editors/ckeditor/editor.js");
+            }
+            else if (BlogConfig.DefaultEditor == "~/admin/editors/ckeditor_4.5/editor.cshtml")
+            {
+                bundles.GetBundleFor("~/scripts/wysiwyg").Include("~/admin//editors/ckeditor_4.5/ckeditor.js");
+                bundles.GetBundleFor("~/scripts/wysiwyg").Include("~/admin/editors/ckeditor_4.5/editor.js");
+                bundles.GetBundleFor("~/scripts/wysiwyg").Include("~/admin/editors/ckeditor_4.5/styles.js");
+                bundles.Add(new StyleBundle("~/style/editor").Include("~/admin/editors/ckeditor_4.5/contents.css"));
             }
             else
             {
@@ -190,6 +213,7 @@ namespace BlogEngine.NET.App_Start
                 // change language here if needed
                 //bundles.GetBundleFor("~/scripts/wysiwyg").Include("~/admin/editors/summernote/lang/summernote-ru-RU.js");
                 bundles.GetBundleFor("~/scripts/wysiwyg").Include("~/admin/editors/summernote/editor.js");
+                bundles.GetBundleFor("~/Content/admincss").Include("~/admin/editors/summernote/summernote.css");
             }
         }
 

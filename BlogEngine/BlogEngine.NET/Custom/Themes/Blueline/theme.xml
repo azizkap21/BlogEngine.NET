@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<metadata>
+    <id>Blueline</id>
+    <description>The theme includes the following features: - Post Thumbnails - Widget-ready Sidebar - Left Sidebar - Footer on post with tags, catagories - Styled footer - Header on post with images and “Edit” link - Seo Friendly - Author info (on posts) - Comments with speech bubble ;o) - Pagerlink styled - Seo friendly (Removed google problem with rss and feed beeing keywords) - 301 redirect from http:// to http://www.</description>
+    <authors>Jimmy Sigenstroem</authors>
+    <website />
+    <version>3.0.0.1</version>
+    <iconurl>http://dnbe.net/v01/images/Blueline.png</iconurl>
+</metadata>

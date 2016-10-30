@@ -1,0 +1,26 @@
+﻿[
+  {
+    "outputFile": "Custom/Themes/Standard/src/scss/base/_variables.css",
+    "inputFile": "Custom/Themes/Standard/src/scss/base/_variables.scss"
+  },
+  {
+    "outputFile": "Custom/Themes/Standard/src/scss/styles.css",
+    "inputFile": "Custom/Themes/Standard/src/scss/styles.scss"
+  },
+  {
+    "outputFile": "Custom/Themes/BusinessBlue/src/scss/styles.css",
+    "inputFile": "Custom/Themes/BusinessBlue/src/scss/styles.scss"
+  },
+  {
+    "outputFile": "Custom/Themes/BusinessBlue/src/scss/base/styles.css",
+    "inputFile": "Custom/Themes/BusinessBlue/src/scss/base/styles.scss"
+  },
+  {
+    "outputFile": "admin/editors/tinymce4/skins/lightgray/Variables.css",
+    "inputFile": "admin/editors/tinymce4/skins/lightgray/Variables.less"
+  },
+  {
+    "outputFile": "admin/editors/tinymce4/skins/lightgray/skin.css",
+    "inputFile": "admin/editors/tinymce4/skins/lightgray/skin.less"
+  }
+]

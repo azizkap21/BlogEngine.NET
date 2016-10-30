@@ -1,0 +1,22 @@
+﻿.btn {
+    @include border-radius(0);
+}
+
+.btn-primary {
+    @include button-variant(#fff, $color-theme, $color-theme);
+}
+
+.btn-success {
+    @include button-variant(#fff, $color-success, $color-success);
+}
+
+
+
+.btn-info {
+    @include button-variant(#fff, $color-info, $color-info);
+}
+
+
+.btn-danger {
+    @include button-variant(#fff, $color-danger, $color-danger);
+}

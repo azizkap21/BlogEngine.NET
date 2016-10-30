@@ -1,0 +1,71 @@
+﻿.blog-footer {
+    padding: 2rem 0 1.5rem;
+    margin-top: 4rem;
+    border-top: 1px solid #444;
+    color: #aaa;
+    font-size: 1rem;
+
+    a {
+        color: #666;
+
+        &:hover {
+            color: $color-theme;
+        }
+    }
+
+    p {
+        font-size: .75rem;
+        text-transform: uppercase;
+    }
+
+    .social-network {
+        @include unstyled();
+
+        li {
+            float: right;
+            margin-left: 1rem;
+
+            a {
+                color: #aaa;
+
+                &:hover {
+                    color: $color-theme;
+                }
+            }
+        }
+    }
+
+    .designer {
+        background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCAxMjggMTI3LjkiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDEyOCAxMjcuOSIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBvbHlnb24gZmlsbD0iI2FhYSIgcG9pbnRzPSIxMjgsMTI3LjkgNDguMSwxMjcuOSA0OC4xLDk1LjkgOTYuMSw5NS45IDk2LjEsNzkuOSA0OC4xLDc5LjkgNDguMSw0Ny44IDEyOCw0Ny44ICIvPjxwb2x5bGluZSBmaWxsPSIjYWFhIiBwb2ludHM9IjAsMTI3LjkgMzIsMTI3LjkgMzIsOTUuOSAwLDk1LjkgIi8+PHBvbHlsaW5lIGZpbGw9IiNhYWEiIHBvaW50cz0iMCwwIDAsODAgMzIsODAgMzIsMzIgMTI4LDMyIDEyOCwwICIvPjwvc3ZnPg==);
+        background-position: 0 0;
+        vertical-align: top;
+        font-size: 0;
+        display: inline-block;
+        width: 0.625rem;
+        height: 0.625rem;
+        position: relative;
+        top: 0.25rem;
+        left: 0.25rem;
+    }
+
+    @media screen and (max-width:64rem) {
+        text-align: center;
+
+        p, .social-network {
+            float: none !important;
+        }
+
+        .social-network {
+            margin-top: 0;
+
+            li {
+                display: inline-block;
+                float: none;
+            }
+        }
+
+        p {
+            display: none;
+        }
+    }
+}

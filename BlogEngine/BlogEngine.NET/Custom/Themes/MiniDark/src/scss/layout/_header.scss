@@ -1,0 +1,127 @@
+﻿.blog-header {
+    padding: 4.25rem 0 4rem;
+    margin-bottom: 4rem;
+    border-bottom: 1px solid #444;
+    position: relative;
+    // logo
+    .blog-logo {
+        height: $logo-size;
+        line-height: $logo-size;
+        font-size: 1.75rem;
+        text-transform: uppercase;
+        margin: 0;
+
+        a {
+            color: #fff;
+            display: block;
+            height: 100%;
+            text-decoration: none;
+        }
+    }
+    // nav
+    .blog-nav {
+        position: relative;
+
+        .blog-nav-toggle {
+            i {
+                display: block;
+                width: $nav-size;
+                height: $nav-size;
+                line-height: $nav-size;
+                float: right;
+                font-size: 1.25rem;
+                background-color: #444;
+                margin-left: .5rem;
+                text-align: center;
+                cursor: pointer;
+                color: #fff;
+            }
+
+            .fa-search {
+                font-size: 1.125rem;
+            }
+        }
+
+        ul {
+            display: none;
+            @include unstyled();
+            position: absolute;
+            right: 0;
+            top: $nav-size + 1rem;
+            background-color: #fff;
+            width: 12rem;
+            z-index: 100;
+
+            &:before {
+                content: "";
+                position: absolute;
+                right: 0.5rem;
+                top: -0.5rem;
+                @include triangle(up, 0.5rem, #fff);
+            }
+
+            li {
+                height: $nav-size + 1rem;
+
+                a {
+                    display: block;
+                    height: 100%;
+                    line-height: $nav-size + 1rem;
+                    color: #000;
+                    text-transform: uppercase;
+                    font-size: .875rem;
+                    letter-spacing: .125rem;
+                    text-decoration: none;
+                    padding: 0 1rem;
+                    border-bottom: 1px solid #eee;
+
+                    &:hover {
+                        color: $color-theme;
+                    }
+                }
+            }
+
+            .logoff-link {
+                display: none;
+            }
+        }
+
+        .blog-search {
+            display: none;
+            @include unstyled();
+            position: absolute;
+            right: $nav-size + .5rem;
+            top: $nav-size + 1rem;
+            background-color: #fff;
+            width: 12rem;
+
+            input {
+                width: 100%;
+                height: $nav-size + .5rem;
+                border: none;
+                background: none;
+                outline: none !important;
+                color: #333;
+                font-size: 1rem;
+                padding: 1rem;
+            }
+
+            &:before {
+                content: "";
+                position: absolute;
+                right: 0.5rem;
+                top: -0.5rem;
+                @include triangle(up, 0.5rem, #fff);
+            }
+        }
+    }
+
+    @media screen and (max-width:64rem) {
+        padding: 1rem 0;
+        margin-bottom: 2rem;
+
+        .blog-logo {
+            font-size: 1.25rem;
+        }
+    }
+}

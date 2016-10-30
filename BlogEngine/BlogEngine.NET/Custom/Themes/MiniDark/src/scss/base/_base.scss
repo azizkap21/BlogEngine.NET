@@ -1,0 +1,22 @@
+﻿html {
+    font-size: 1em;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: $font-family-base;
+    font-size: $font-size-base;
+    font-weight: $font-weight-normal;
+    cursor: default;
+    overflow-y: scroll;
+    background-color:#222;
+    color:#888;
+}
+
+.container {
+    width: 48rem;
+    max-width: 100%;
+}

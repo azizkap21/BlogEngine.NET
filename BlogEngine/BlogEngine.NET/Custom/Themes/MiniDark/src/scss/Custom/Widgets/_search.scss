@@ -1,0 +1,33 @@
+﻿.search {
+    height: 3rem;
+    position: relative;
+
+    .widget-content {
+        padding: 0;
+    }
+
+    input[type=text] {
+        background: none;
+        height: 3rem;
+        padding: 0 2%;
+        border: none;
+        width: 75%;
+        font-size: 14px;
+        outline: none !important;
+    }
+
+    input[type=button] {
+        background: #000;
+        border: none;
+        color: #fff;
+        padding: 0;
+        height: 3rem;
+        right: 0;
+        width: 25%;
+        position: absolute;
+
+        &:hover {
+            background-color: $color-theme;
+        }
+    }
+}

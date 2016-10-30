@@ -85,6 +85,13 @@
                 writer.WriteElementString("changefreq", "monthly");
                 writer.WriteEndElement();
 
+                // About
+                writer.WriteStartElement("url");
+                writer.WriteElementString("loc", string.Format("{0}about.aspx", Utils.AbsoluteWebRoot));
+                writer.WriteElementString("lastmod", DateTime.Now.ToString("yyyy-MM-dd", CultureInfo.InvariantCulture));
+                writer.WriteElementString("changefreq", "monthly");
+                writer.WriteEndElement();
+
                 // Blog
                 if (Page.GetFrontPage() != null)
                 {

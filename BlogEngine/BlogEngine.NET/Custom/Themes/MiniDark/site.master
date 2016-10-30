@@ -1,0 +1,81 @@
+<%@ Master Language="C#" AutoEventWireup="true" %>
+
+<%@ Import Namespace="BlogEngine.Core" %>
+<%
+    Page.Header.DataBind();
+
+    if (Security.IsAuthenticated)
+    {
+        aLogin.InnerText = Resources.labels.admin;
+        aLogin.HRef = Utils.RelativeWebRoot + "admin/";
+    }
+    else
+    {
+        aLogin.HRef = Utils.RelativeWebRoot + "Account/login.aspx";
+        aLogin.InnerText = Resources.labels.login;
+    }
+%>
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+    <link href="src/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="src/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="src/css/styles.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="~/Content/images/blog/blogengine.ico" type="image/x-icon" />
+    <link href="~/scripts/syntaxhighlighter/styles/shCore.css" rel="stylesheet" type="text/css" />
+    <link href="~/scripts/syntaxhighlighter/styles/shThemeDefault.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="<%# Utils.ApplicationRelativeWebRoot %>scripts/syntaxhighlighter/scripts/XRegExp.js"></script>
+    <script type="text/javascript" src="<%# Utils.ApplicationRelativeWebRoot %>scripts/syntaxhighlighter/scripts/shCore.js"></script>
+    <script type="text/javascript" src="<%# Utils.ApplicationRelativeWebRoot %>scripts/syntaxhighlighter/scripts/shAutoloader.js"></script>
+    <script type="text/javascript" src="<%# Utils.ApplicationRelativeWebRoot %>scripts/syntaxhighlighter/shActivator.js"></script>
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body class="<%=Resources.labels.LangDirection %>">
+
+    <form runat="Server">
+        <div class="container">
+            <header class="blog-header clearfix">
+                <h1 class="blog-logo pull-left">
+                    <a title="<%=BlogSettings.Instance.Description %>" href="<%=Utils.AbsoluteWebRoot %>"><%=BlogSettings.Instance.Name %></a>
+                </h1>
+                <nav class="blog-nav pull-right">
+                    <div class="blog-nav-toggle"><i class="fa fa-navicon"></i><i class="fa fa-search"></i></div>
+                    <ul>
+                        <li><a href="<%=Utils.AbsoluteWebRoot %>"><%=Resources.labels.home %></a></li>
+                        <li><a href="<%=Utils.AbsoluteWebRoot %>archive<%= BlogConfig.FileExtension %>"><%=Resources.labels.archive %></a></li>
+                        <li><a href="<%=Utils.AbsoluteWebRoot %>contact<%= BlogConfig.FileExtension %>"><%=Resources.labels.contact %></a></li>
+                        <li class="login-link"><a runat="server" id="aLogin"></a></li>
+                        <li class="logoff-link"><a href="<%=Utils.AbsoluteWebRoot %>Account/login.aspx?logoff"><%=Resources.labels.logoff %></a></li>
+                    </ul>
+                    <div id="topSearch" class="blog-search">
+                        <input type="text" autocomplete="off" placeholder="<%=Resources.labels.search %>..." onkeypress="if(event.keyCode==13) return BlogEngine.search('<%=Utils.RelativeWebRoot%>')" id="searchfield" />
+                    </div>
+                </nav>
+            </header>
+            <div class="blog-content">
+                <blog:SearchOnSearch ID="SearchOnSearch1" runat="server" MaxResults="3" Headline="You searched for" Text="Here are some results for the search term on this website" />
+                <asp:ContentPlaceHolder ID="cphBody" runat="server" />
+            </div>
+            <footer class="blog-footer clearfix">
+                <p class="pull-left">Copyright &copy; <%=DateTime.Now.Year %>  <span>-</span> Design by <a href="http://seyfolahi.net/" class="designer" rel="nofollow" target="_blank">FS</a> </p>
+                <ul class="pull-right social-network">
+                    <li><a target="_blank" class="social-item" href="[CUSTOMFIELD|THEME|MiniDark|Facebook Account|/]" rel="external nofollow"><i class="fa fa-facebook"></i></a></li>
+                    <li><a target="_blank" class="social-item" href="[CUSTOMFIELD|THEME|MiniDark|Twitter Account|/]" rel="external nofollow"><i class="fa fa-twitter"></i></a></li>
+                    <li><a target="_blank" class="social-item" href="[CUSTOMFIELD|THEME|MiniDark|Google Plus Account|/]" rel="external nofollow"><i class="fa fa-google"></i></a></li>
+                    <li><a target="_blank" class="social-item" href="[CUSTOMFIELD|THEME|MiniDark|Linkedin Account|/]" rel="external nofollow"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a target="_blank" class="social-item" href="[CUSTOMFIELD|THEME|MiniDark|RSS Link|/syndication.axd/]" rel="external nofollow"><i class="fa fa-rss"></i></a></li>
+                    <li><a target="_blank" class="social-item" href="[CUSTOMFIELD|THEME|MiniDark|Instagramm Account|/]" rel="external nofollow"><i class="fa fa-instagram"></i></a></li>
+                    <li><a target="_blank" class="social-item" href="[CUSTOMFIELD|THEME|MiniDark|Pinterest Account|/]" rel="external nofollow"><i class="fa fa-pinterest"></i></a></li>
+                    <li><a target="_blank" class="social-item" href="[CUSTOMFIELD|THEME|MiniDark|Soundcloud Account|/]" rel="external nofollow"><i class="fa fa-soundcloud"></i></a></li>
+                    <li><a target="_blank" class="social-item" href="[CUSTOMFIELD|THEME|MiniDark|Youtube Account|/]" rel="external nofollow"><i class="fa fa-youtube"></i></a></li>
+                    <li><a target="_blank" class="social-item" href="[CUSTOMFIELD|THEME|MiniDark|Github Account|/]" rel="external nofollow"><i class="fa fa-git"></i></a></li>
+                </ul>
+            </footer>
+        </div>
+    </form>
+    <script src="<%=Utils.AbsoluteWebRoot %>Custom/Themes/MiniDark/src/js/bootstrap.min.js"></script>
+    <script src="<%=Utils.AbsoluteWebRoot %>Custom/Themes/MiniDark/src/js/custom.js"></script>
+</body>
+</html>

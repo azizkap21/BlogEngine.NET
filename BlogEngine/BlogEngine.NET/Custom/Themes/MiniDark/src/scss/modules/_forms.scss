@@ -1,0 +1,11 @@
+﻿.form-control {
+    @include border-radius(0);
+    background: none;
+    border-color:#555;
+
+    &:focus {
+        @include box-shadow(none);
+        border-color: $color-theme;
+    }
+}
+ 

@@ -19,7 +19,9 @@
     }
 %>
 <!DOCTYPE html>
+
 <html>
+
 <head runat="server">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -34,7 +36,7 @@
     <script type="text/javascript" src="<%# Utils.ApplicationRelativeWebRoot %>scripts/syntaxhighlighter/scripts/shAutoloader.js"></script>
     <script type="text/javascript" src="<%# Utils.ApplicationRelativeWebRoot %>scripts/syntaxhighlighter/shActivator.js"></script>
     <asp:ContentPlaceHolder ID="HeadContent" runat="server"></asp:ContentPlaceHolder>
-    <link rel="shortcut icon" href="~/Content/images/blog/blogengine.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="~/Content/images/blog/ak.ico" type="image/x-icon" />
     <style>
         body {
             background: [CUSTOMFIELD|THEME|Standard|background color left|#232526/];
@@ -42,11 +44,43 @@
             background: linear-gradient(to left, [CUSTOMFIELD|THEME|Standard|background color right|#414345/], [CUSTOMFIELD|THEME|Standard|background color left|#232526/]);
         }
     </style>
+    <title>Aziz Kapadia
+    </title>
 </head>
 <body class="<%=Resources.labels.LangDirection %>">
     <form runat="Server">
         <div class="container">
+
             <div class="blog-wrapper">
+
+                <div class="blog-content admin-alerts-[CUSTOMFIELD|THEME|Standard|Home Alert Box (true or false?)|true/]">
+                    <div class="navbar navbar-inverse">
+                        <div class="container">
+
+
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+
+                            </div>
+                            <div class="navbar-collapse collapse">
+                                <div class="navbar navbar-brand">
+                                    Aziz Kapadia
+
+                                </div>
+                                <ul class="nav navbar-nav" style="float: right;">
+                                    <li><a style="color: #fff" runat="server" href="~/">Home</a></li>
+                                    <li><a runat="server" href="~/About">About</a></li>
+                                    <li><a runat="server" href="~/Contact">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <asp:ContentPlaceHolder ID="cphBody" runat="server" />
+                </div>
                 <aside class="blog-sidebar">
                     <header class="blog-header">
                         <div class="blog-info">
@@ -73,6 +107,7 @@
                                 <li><a href="<%=Utils.AbsoluteWebRoot %>" class="item-home" title="<%=Resources.labels.home %>"><i class="fa fa-home"></i></a></li>
                                 <li><a href="<%=Utils.AbsoluteWebRoot %>archive" class="item-archive" title="<%=Resources.labels.archive %>"><i class="fa fa-align-left"></i></a></li>
                                 <li><a href="<%=Utils.AbsoluteWebRoot %>contact" class="item-contact" title="<%=Resources.labels.contact %>"><i class="fa fa-envelope"></i></a></li>
+                                <li><a href="<%=Utils.AbsoluteWebRoot %>about" class="item-about" title="<%=Resources.labels.about %>"><i class="fa fa-user-plus"></i></a></li>
                                 <li><a runat="server" id="aLogin" class="item-login" title=""><span id="aLoginText" runat="server"></span></a></li>
                             </ul>
                         </nav>
@@ -83,20 +118,19 @@
                             Copyright &copy; <%=DateTime.Now.Year %>
                         </p>
                         <p>
-                            Powered by <a href="http://dotnetblogengine.net/" target="_blank" title="BlogEngine.NET <%=BlogSettings.Instance.Version() %>">BlogEngine.NET</a>
+                            Powered by <a href="http://azizweb.com" target="_blank" title="Aziz Kapadia">azizweb.com</a>
                         </p>
                         <p>
-                            Designed by <a href="http://francis.bio/" rel="nofollow" target="_blank">Francis Bio</a>
+                            Designed by <a href="#" rel="nofollow" target="_blank">Aziz Kapadia</a>
                         </p>
                     </footer>
                 </aside>
-                <div class="blog-content admin-alerts-[CUSTOMFIELD|THEME|Standard|Home Alert Box (true or false?)|true/]">
-                    <asp:ContentPlaceHolder ID="cphBody" runat="server" />
-                </div>
             </div>
+
         </div>
         <script src="<%=Utils.RelativeWebRoot %>custom/themes/standard/src/js/bootstrap.min.js"></script>
         <script src="<%=Utils.RelativeWebRoot %>custom/themes/standard/src/js/custom.js"></script>
     </form>
+
 </body>
 </html>

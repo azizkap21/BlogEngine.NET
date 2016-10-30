@@ -14,7 +14,7 @@
            
                 <div class="form-group first-child">
                     <asp:Label ID="CurrentPasswordLabel" runat="server" CssClass="label-up" AssociatedControlID="CurrentPassword"><%=Resources.labels.oldPassword %>:</asp:Label>
-                    <asp:TextBox ID="CurrentPassword" runat="server" placeholder="" CssClass="passwordEntry form-control ltr-dir" TextMode="Password"></asp:TextBox>
+                    <asp:TextBox ID="CurrentPassword" runat="server" CssClass="passwordEntry form-control ltr-dir" TextMode="Password" placeholder="Old Password"></asp:TextBox>
                 </div>
                 <div class="form-group">
                     <asp:Label ID="NewPasswordLabel" runat="server" CssClass="label-up" AssociatedControlID="NewPassword"><%=Resources.labels.newPassword %>:</asp:Label>

@@ -1,0 +1,49 @@
+﻿.page-global {
+    margin-bottom: 2rem;
+    position: relative;
+
+    .page-global-title {
+        font-size: 1.5rem;
+    }
+
+    @media screen and (max-width:30rem) {
+        padding: 1rem;
+        padding-top: 4.625rem;
+
+        .page-global-title {
+            padding: 1rem;
+        }
+    }
+}
+
+#trackbacks {
+    background-color: #fafafa;
+}
+
+.well-global {
+    background-color: #151515;
+    margin-bottom: 2rem;
+
+    .well-global-title {
+        margin: 0;
+        padding: 1.5rem 2rem;
+        font-weight: normal;
+        border-bottom: 1px solid #333;
+        text-transform: uppercase;
+        font-weight: $font-weight-medium;
+        font-size: 1.25rem;
+        line-height: 1.25rem;
+
+        h3 {
+            margin: 0;
+            font-weight: inherit;
+            font-size: inherit;
+        }
+    }
+
+    @media screen and (max-width:30rem) {
+        .well-global-title {
+            padding: 1rem;
+        }
+    }
+}

@@ -124,7 +124,7 @@
     <value>Add entry</value>
   </data>
   <data name="addComment" xml:space="preserve">
-    <value>Add comment</value>
+    <value>Add Comment</value>
   </data>
   <data name="addCustomCodeToHeader" xml:space="preserve">
     <value>Add custom code to the HTML head section</value>
@@ -467,7 +467,7 @@
     <value>Receive</value>
   </data>
   <data name="recentComments" xml:space="preserve">
-    <value>Recent comments</value>
+    <value>Recent Comments</value>
   </data>
   <data name="recentPosts" xml:space="preserve">
     <value>Recent posts</value>
@@ -479,7 +479,7 @@
     <value>Referrers</value>
   </data>
   <data name="relatedPosts" xml:space="preserve">
-    <value>Related posts</value>
+    <value>Related Posts</value>
   </data>
   <data name="remove" xml:space="preserve">
     <value>Remove</value>
@@ -491,7 +491,7 @@
     <value>Save</value>
   </data>
   <data name="saveComment" xml:space="preserve">
-    <value>Save comment</value>
+    <value>Save Comment</value>
   </data>
   <data name="savePage" xml:space="preserve">
     <value>Save page</value>
@@ -500,7 +500,7 @@
     <value>Save post</value>
   </data>
   <data name="saveSettings" xml:space="preserve">
-    <value>Save settings</value>
+    <value>Save Settings</value>
   </data>
   <data name="savingTheComment" xml:space="preserve">
     <value>Saving the comment...</value>

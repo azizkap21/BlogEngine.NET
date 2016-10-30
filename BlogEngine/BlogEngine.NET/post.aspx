@@ -10,7 +10,7 @@
     </div>
   </asp:PlaceHolder>
 
-  <asp:placeholder runat="server" id="phPostNavigation" visible="false" />
+  <%--<asp:placeholder runat="server" id="phPostNavigation" visible="false" />--%>
  
   <asp:placeholder runat="server" id="pwPost" />
 

@@ -133,7 +133,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Add comment.
+        ///   Looks up a localized string similar to Add Comment.
         /// </summary>
         internal static string addComment {
             get {
@@ -5246,7 +5246,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Recent comments.
+        ///   Looks up a localized string similar to Recent Comments.
         /// </summary>
         internal static string recentComments {
             get {
@@ -5381,7 +5381,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Related posts.
+        ///   Looks up a localized string similar to Related Posts.
         /// </summary>
         internal static string relatedPosts {
             get {
@@ -5732,7 +5732,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Save comment.
+        ///   Looks up a localized string similar to Save Comment.
         /// </summary>
         internal static string saveComment {
             get {
@@ -5777,7 +5777,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Save settings.
+        ///   Looks up a localized string similar to Save Settings.
         /// </summary>
         internal static string saveSettings {
             get {

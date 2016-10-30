@@ -183,42 +183,42 @@ public partial class post : BlogBasePage
 	/// </summary>
 	private void InitNavigationLinks()
 	{
-		if (BlogSettings.Instance.ShowPostNavigation)
-		{
-			Post next = GetNextPost(Post);
-			Post prev = GetPrevPost(Post);
+		//if (BlogSettings.Instance.ShowPostNavigation)
+		//{
+		//	Post next = GetNextPost(Post);
+		//	Post prev = GetPrevPost(Post);
 
-            if ((next != null && !next.Deleted) || (prev != null && !prev.Deleted))
-            {
-                try
-                {
-                    // Try to load PostNavigation from theme folder
-                    var template = BlogSettings.Instance.IsRazorTheme ? "PostNavigation.cshtml" : "PostNavigation.ascx";
+  //          if ((next != null && !next.Deleted) || (prev != null && !prev.Deleted))
+  //          {
+  //              try
+  //              {
+  //                  // Try to load PostNavigation from theme folder
+  //                  var template = BlogSettings.Instance.IsRazorTheme ? "PostNavigation.cshtml" : "PostNavigation.ascx";
 
                     var path =$"{Utils.ApplicationRelativeWebRoot}Custom/Themes/{BlogSettings.Instance.Theme}/{template}";
 
-                    if (!System.IO.File.Exists(Server.MapPath(path)))
-                        path = Utils.ApplicationRelativeWebRoot + "Custom/Controls/Defaults/PostNavigation.ascx";
-                    else
-                        path = Utils.ApplicationRelativeWebRoot + "Custom/Themes/" + BlogSettings.Instance.GetThemeWithAdjustments(null) + "/PostNavigation.ascx";
+  //                  if (!System.IO.File.Exists(Server.MapPath(path)))
+  //                      path = Utils.ApplicationRelativeWebRoot + "Custom/Controls/Defaults/PostNavigation.ascx";
+  //                  else
+  //                      path = Utils.ApplicationRelativeWebRoot + "Custom/Themes/" + BlogSettings.Instance.GetThemeWithAdjustments(null) + "/PostNavigation.ascx";
                     
-                    var navView = (PostNavigationBase)LoadControl(path);
-                    navView.CurrentPost = this.Post;
-                    phPostNavigation.Controls.Add(navView);
-                    phPostNavigation.Visible = true;
-                }
-                catch (Exception ex)
-                {
-                    Utils.Log("Error loading PostNavigation template", ex);
-                }
-            }
-		}
+  //                  var navView = (PostNavigationBase)LoadControl(path);
+  //                  navView.CurrentPost = this.Post;
+  //                  phPostNavigation.Controls.Add(navView);
+  //                  phPostNavigation.Visible = true;
+  //              }
+  //              catch (Exception ex)
+  //              {
+  //                  Utils.Log("Error loading PostNavigation template", ex);
+  //              }
+  //          }
+		//}
 	}
-
-	/// <summary>
-	/// Adds the post's description as the description metatag.
-	/// </summary>
-	private void AddMetaDescription()
+       
+    /// <summary>
+    /// Adds the post's description as the description metatag.
+    /// </summary>
+    private void AddMetaDescription()
 	{
         var desc = BlogSettings.Instance.Name + " - " + BlogSettings.Instance.Description + " - " + Post.Description;
         base.AddMetaTag("description", Server.HtmlEncode(desc));

@@ -1,3 +1,4 @@
+
 html {
     font-size: 1em;
 }
@@ -16,7 +17,7 @@ body {
     background: linear-gradient(to left,$color-body-right, $color-body-left);
     cursor: default;
     overflow-y: scroll;
-    padding-top: 2rem;
+    padding-top: .2rem;
 }
 // typography
 h1,
@@ -51,7 +52,7 @@ img {
     width: 80rem;
     max-width: 100%;
     padding-right: 2rem;
-    padding-left: 2rem;
+    padding-left: .2rem;
 }
 // blog-wrapper
 .blog-wrapper {
@@ -67,13 +68,13 @@ img {
     }
 
     > .blog-sidebar {
-        width: 18.75rem;
-        min-width: 18.75rem;
-        max-width: 18.75rem;
+        width: 20rem;
+        min-width: 20rem;
+        max-width: 20rem;
     }
 
     > .blog-content {
-        padding-left: 2rem;
+        padding-left: .2rem;
         min-width: 100%;
         width: 100%;
     }
@@ -81,9 +82,9 @@ img {
     .blog-footer,
     .blog-header,
     .widgetzone {
-        max-width: 18.75rem;
+        max-width: 20rem;
     }
-    @media screen and (max-width: 75rem) {
+    @media screen and (max-width: 80rem) {
         > .blog-sidebar {
             width: 15.625rem;
             min-width: 15.625rem;

@@ -1,0 +1,6 @@
+﻿.navigation-posts {  display: table; width: 100%; overflow: hidden; display:none !important}
+.navigation-posts a { text-decoration: none; }
+.navigation-posts > div { width: 50%; text-align: center; display: table-cell; vertical-align: middle; }
+.navigation-posts a { display: block !important; height: 100%; padding: 20px 10px; }
+.navigation-posts > div:hover { background-color: #444; }
+.navigation-posts > div.text-left { border-right: 1px solid #333; }

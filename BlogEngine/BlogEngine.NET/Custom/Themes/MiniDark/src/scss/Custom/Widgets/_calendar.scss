@@ -1,0 +1,10 @@
+﻿#calendarContainer { text-transform: capitalize; text-align: center; }
+.calendar table { width: 100%; text-align: center; }
+.calendar td, .calendar table { background: none !important; text-align: center; }
+.calendar .header { background: none !important; width: auto !important; height: auto !important; }
+.calendar .weekend { background-color: #F1F1F1; }
+.calendar .other { color: silver; }
+.calendar a.exist { display: inline-block; padding: 0 5px; border-radius: 104px; color: #fff; font-weight: normal; background-color: $color-theme; }
+.calendar a.exist:hover { color: #fff; }
+.calendar td { vertical-align: top; background: white; }
+.calendar .widget-content { padding: 10px; }

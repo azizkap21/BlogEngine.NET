@@ -129,8 +129,9 @@
                 url.Contains("/CALENDAR/") ||
                 url.StartsWith(blogInstance.RelativeWebRoot + "contact.aspx", StringComparison.OrdinalIgnoreCase) ||
                 url.StartsWith(blogInstance.RelativeWebRoot + "search.aspx", StringComparison.OrdinalIgnoreCase) ||
-                url.StartsWith(blogInstance.RelativeWebRoot + "archive.aspx", StringComparison.OrdinalIgnoreCase))
-            { 
+                url.StartsWith(blogInstance.RelativeWebRoot + "archive.aspx", StringComparison.OrdinalIgnoreCase) ||
+                url.StartsWith(blogInstance.RelativeWebRoot + "about.aspx", StringComparison.OrdinalIgnoreCase))
+            {
                 string redirectUrl = context.Request.RawUrl;
                 int firstInstance = redirectUrl.IndexOf(".aspx", StringComparison.OrdinalIgnoreCase);
                 if (firstInstance != -1)
@@ -144,7 +145,7 @@
 
         private static void Rewrite(HttpContext context, Blog blogInstance, string url, string path)
         {
-            var urlContainsFileExtension = BlogSettings.Instance.RemoveExtensionsFromUrls ? true : 
+            var urlContainsFileExtension = BlogSettings.Instance.RemoveExtensionsFromUrls ? true :
                 url.IndexOf(BlogConfig.FileExtension, StringComparison.OrdinalIgnoreCase) != -1;
 
             // Utils.Log(string.Format("Rewriting :: {0} :: {1}", url, path));
@@ -202,6 +203,10 @@
             else if (BlogSettings.Instance.RemoveExtensionsFromUrls && path.StartsWith(blogInstance.RelativeWebRoot + "search", StringComparison.OrdinalIgnoreCase) && string.IsNullOrWhiteSpace(Path.GetExtension(path)))
             {
                 UrlRules.RewriteSearch(context, url);
+            }
+            else if (BlogSettings.Instance.RemoveExtensionsFromUrls && path.StartsWith(blogInstance.RelativeWebRoot + "about", StringComparison.OrdinalIgnoreCase) && string.IsNullOrWhiteSpace(Path.GetExtension(path)))
+            {
+                UrlRules.RewriteAbout(context, url);
             }
             else
             {

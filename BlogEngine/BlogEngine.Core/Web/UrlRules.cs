@@ -106,6 +106,16 @@ namespace BlogEngine.Core.Web
         }
 
         /// <summary>
+        /// Rewrites the about page.
+        /// </summary>
+        /// <param name="context">The context.</param>
+        /// <param name="url">The URL string.</param>
+        public static void RewriteAbout(HttpContext context, string url)
+        {
+            RewritePhysicalPageGeneric(context, url, "about.aspx");
+        }
+
+        /// <summary>
         /// Rewrites the archive page.
         /// </summary>
         /// <param name="context">The context.</param>

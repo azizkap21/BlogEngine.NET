@@ -1,0 +1,47 @@
+﻿.widget {
+    margin-bottom: 2rem;
+    background-color: rgba(0,0,0,0.1);
+    font-size: 1rem;
+    color: #999;
+
+    .widget-header {
+        margin: 0;
+        color: #EEE;
+        border-bottom: 1px solid rgba(255,255,255,0.05);
+        padding: 1rem 1.5rem;
+        font-weight: $font-weight-medium;
+        line-height: 28px;
+        text-transform: uppercase;
+        letter-spacing: .125rem;
+        font-size: 1.125rem;
+    }
+
+    .widget-content {
+        a {
+            color: #999;
+
+            &:hover {
+                color: $color-theme;
+            }
+        }
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        > li {
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            padding: 1rem 1.5rem;
+
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+
+        ul li {
+            border: none;
+        }
+    }
+}

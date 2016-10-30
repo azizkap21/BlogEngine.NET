@@ -7,6 +7,8 @@
     <title>Account Login</title>
     <meta name="description" content="Account Login Membership User Password" />
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,500' rel='stylesheet' type='text/css'>
+    
+    <link href="../content/bootstrap.css" rel="stylesheet" />
     <link href="account.css" rel="stylesheet" />
     <script src="../Scripts/jquery-2.1.4.min.js"></script>
     <script type="text/javascript" src="account.js"></script>
@@ -22,8 +24,9 @@
     <form id="Form1" runat="server">
         <div class="account">
             <div class="account-header text-center">
-                <a href="http://dotnetblogengine.net/" target="_blank">
-                    <img alt="BlogEngine.NET" src="../Content/images/blog/logo.png" /></a>
+                
+                Aziz Kapadia's Blog
+
             </div>
              <div id="StatusBox">
                     <div id="AdminStatus" runat="server" style="display: none"></div>

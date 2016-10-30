@@ -127,7 +127,7 @@
   </data>
   <data name="addComment" xml:space="preserve">
     <value>Thêm bình luận</value>
-    <comment>Add comment</comment>
+    <comment>Add Comment</comment>
   </data>
   <data name="addCustomCodeToHeader" xml:space="preserve">
     <value>Thêm mã tùy chỉnh để phần đầu HTML</value>

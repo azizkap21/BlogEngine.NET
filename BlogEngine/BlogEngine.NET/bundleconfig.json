@@ -1,0 +1,14 @@
+[
+  {
+    "outputFileName": "admin/editors/tinymce4/plugins/sh4tinymce/plugin.min.js",
+    "inputFiles": [
+      "admin/editors/tinymce4/plugins/sh4tinymce/plugin.js"
+    ]
+  },
+  {
+    "outputFileName": "admin/editors/tinymce4/skins/lightgray/skin.min.min.css",
+    "inputFiles": [
+      "admin/editors/tinymce4/skins/lightgray/skin.min.css"
+    ]
+  }
+]
