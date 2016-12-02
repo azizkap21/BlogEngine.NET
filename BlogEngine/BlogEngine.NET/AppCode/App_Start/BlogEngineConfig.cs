@@ -186,14 +186,14 @@ namespace BlogEngine.NET.App_Start
             else if (BlogConfig.DefaultEditor == "~/admin/editors/tinymce4/editor.cshtml")
             {
                 // tinymce plugings won't load when compressed. added in post/page editors instead.
-                bundles.GetBundleFor("~/scripts/wysiwyg").Include("~/admin/editors/tinymce4/tinymce.min.js");
-                bundles.GetBundleFor("~/scripts/wysiwyg").Include("~/admin/editors/tinymce4/editor.js");
+                //bundles.GetBundleFor("~/scripts/wysiwyg").Include("~/admin/editors/tinymce4/tinymce.min.js");
+                //bundles.GetBundleFor("~/scripts/wysiwyg").Include("~/admin/editors/tinymce4/editor.js");
             }
             else if (BlogConfig.DefaultEditor == "~/admin/editors/tinymce/editor.cshtml")
             {
                 // tinymce plugings won't load when compressed. added in post/page editors instead.
-                bundles.GetBundleFor("~/scripts/wysiwyg").Include("~/admin/editors/tinymce/tinymce.min.js");
-                bundles.GetBundleFor("~/scripts/wysiwyg").Include("~/admin/editors/tinymce/editor.js");
+                //bundles.GetBundleFor("~/scripts/wysiwyg").Include("~/admin/editors/tinymce/tinymce.min.js");
+                //bundles.GetBundleFor("~/scripts/wysiwyg").Include("~/admin/editors/tinymce/editor.js");
             }
             else if (BlogConfig.DefaultEditor == "~/admin/editors/ckeditor/editor.cshtml")
             {

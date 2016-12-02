@@ -1724,8 +1724,7 @@ namespace BlogEngine.Core.Providers
         public override void InsertCategory(Category category)
         {
             var categories = Category.Categories;
-            categories.Add(category);
-            categories.Sort();
+
 
             using (var conn = this.CreateConnection())
             {
@@ -1739,13 +1738,16 @@ namespace BlogEngine.Core.Providers
                         parms.Add(conn.CreateParameter(FormatParamName("blogid"), Blog.CurrentInstance.Id.ToString()));
                         parms.Add(conn.CreateParameter(FormatParamName("catid"), category.Id.ToString()));
                         parms.Add(conn.CreateParameter(FormatParamName("catname"), category.Title));
-                        parms.Add(conn.CreateParameter(FormatParamName("description"), category.Description));
+                        parms.Add(conn.CreateParameter(FormatParamName("description"), string.IsNullOrEmpty(category.Description) ? string.Empty : category.Description));
                         parms.Add(conn.CreateParameter(FormatParamName("parentid"), (category.Parent == null ? (object)DBNull.Value : category.Parent.ToString())));
 
                         cmd.ExecuteNonQuery();
                     }
                 }
             }
+
+            categories.Add(category);
+            categories.Sort();
         }
 
         /// <summary>
@@ -2330,7 +2332,7 @@ namespace BlogEngine.Core.Providers
             }
 
         }
-        
+
         #endregion
 
         #region Profiles
@@ -2685,7 +2687,7 @@ namespace BlogEngine.Core.Providers
                         var parms = cmd.Parameters;
                         parms.Add(conn.CreateParameter(FormatParamName("PackageId"), package.PackageId));
                         parms.Add(conn.CreateParameter(FormatParamName("Version"), package.Version));
- 
+
                         cmd.ExecuteNonQuery();
                     }
                 }
@@ -2738,7 +2740,7 @@ namespace BlogEngine.Core.Providers
                         {
                             while (rdr.Read())
                             {
-                                if(packageId == rdr.GetString(0))
+                                if (packageId == rdr.GetString(0))
                                 {
                                     var f = new PackageFile()
                                     {

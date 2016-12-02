@@ -221,6 +221,7 @@ namespace BlogEngine.Core.Data
             catch (Exception ex)
             {
                 Utils.Log("Error updating category: ", ex);
+                throw;
             }
         }
 

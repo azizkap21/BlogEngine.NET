@@ -31,6 +31,13 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <FilesToIncludeForPublish>AllFilesInTheProject</FilesToIncludeForPublish>
+    <ExcludeGeneratedDebugSymbol>true</ExcludeGeneratedDebugSymbol>
+    <IncludeIisSettings>false</IncludeIisSettings>
+    <PublishDatabaseSettings>
+      <Objects>
+      </Objects>
+    </PublishDatabaseSettings>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -1111,6 +1118,9 @@
     <Content Include="App_Data\posts\f39c3289-e861-48f7-a4b7-edaaffe6f6dc.xml" />
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
+    <Content Include="Content\images\AK_32-32.jpg" />
+    <Content Include="Content\images\AK_80-80.png" />
+    <Content Include="Content\images\AK_Icon.png" />
     <Content Include="Content\images\blog\ak.ico" />
     <Content Include="Content\images\blog\icon-left.svg" />
     <Content Include="Content\images\blog\icon-pass.svg" />
@@ -1508,6 +1518,7 @@
     <Content Include="Content\images\blog\xfn\me.gif" />
     <Content Include="Content\images\blog\xfn\sweet.gif" />
     <Content Include="Content\images\blog\xfn\sweetMet.gif" />
+    <Content Include="Content\images\Skills_Banner_BlueBlog.png" />
     <Content Include="Content\star-rating.css" />
     <Content Include="Content\toastr.css" />
     <Content Include="Content\toastr.min.css" />
@@ -1636,7 +1647,7 @@
     <Content Include="Custom\Widgets\TextBox\widget.xml" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="FrontPageExample.aspx" />
+    <Content Include="FrontPage.aspx" />
     <Content Include="packages.config" />
     <Content Include="Content\images\blog\ext.png" />
     <Content Include="Content\images\blog\pkg.png" />
@@ -1970,6 +1981,8 @@
     <Content Include="Custom\Themes\Boldy\fonts\fontello.woff" />
     <Content Include="Custom\Themes\Boldy\fonts\Yekan.woff" />
     <Content Include="Custom\Themes\Boldy\site.master" />
+    <None Include="Properties\PublishProfiles\azizweb.com - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\local.pubxml" />
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />
     <Content Include="Scripts\i18n\angular-locale_aa-dj.js" />
     <Content Include="Scripts\i18n\angular-locale_aa-er.js" />
@@ -2815,6 +2828,7 @@
     </None>
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
     </None>
     <Content Include="Web.sitemap" />
   </ItemGroup>
@@ -3393,12 +3407,12 @@
     <Compile Include="error404.aspx.designer.cs">
       <DependentUpon>error404.aspx</DependentUpon>
     </Compile>
-    <Compile Include="FrontPageExample.aspx.cs">
-      <DependentUpon>FrontPageExample.aspx</DependentUpon>
+    <Compile Include="FrontPage.aspx.cs">
+      <DependentUpon>FrontPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="FrontPageExample.aspx.designer.cs">
-      <DependentUpon>FrontPageExample.aspx</DependentUpon>
+    <Compile Include="FrontPage.aspx.designer.cs">
+      <DependentUpon>FrontPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="page.aspx.cs">
       <DependentUpon>page.aspx</DependentUpon>

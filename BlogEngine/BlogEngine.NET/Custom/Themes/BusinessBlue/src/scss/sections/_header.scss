@@ -5,10 +5,25 @@
     @media screen and (max-width: 64rem) {
         margin-bottom: 1rem;
     }
+    @media screen and (max-width: 64rem) {
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+    @media screen and (max-width: 50rem) {
+     width: 100% !important;
+     
+    }
 }
 
 .blog-info {
     background: $color-widget;
+    width: 100%;
+    @media screen and (max-width: 64rem) {
+     width: 12rem;
+    }
+    @media screen and (max-width: 50rem) {
+     width: 100% !important;
+    }
 }
 
 .blog-logo {
@@ -29,15 +44,25 @@
         margin: 0 auto 1rem;
         border-radius: 100%;
     }
-
+    @media screen and (max-width: 50rem) {
+     width: 100%;
+    }
     @media screen and (max-width: 64rem) {
-        padding: .2rem 0 1.5rem;
+        padding: 2.2rem 0.5rem;
     }
 }
 
 .blog-nav {
     height: 3.5rem;
     margin-top: 1px;
+    width: 100%;
+    @media screen and (max-width: 50rem) {
+     width: 100% !important;
+    }
+    @media screen and (max-width: 64rem) {
+        
+        width: 12rem;
+    }
 
     ul {
         @include unstyled();
@@ -50,7 +75,7 @@
     li {
         padding-right: 1px;
         display: table-cell;
-        width: 25%;
+        width: 20%;
         height: 3.5rem;
         text-align: center;
         vertical-align: top;

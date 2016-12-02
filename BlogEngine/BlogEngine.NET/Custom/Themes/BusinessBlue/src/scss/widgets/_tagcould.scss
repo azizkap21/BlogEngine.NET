@@ -4,19 +4,21 @@
         li {
             display: inline-block;
             margin: 1px;
-            border: none;
             padding: 0;
             margin-bottom: 3px;
 
+
             a {
-                padding: .25rem 0.5rem;
-                background-color: rgba(255, 255, 255, 0.09);
-                color: #fff;
+                padding: .1rem 0.2rem;
+                background-color: $color-body-theme;
+                color: #eee;
                 display: block;
+                font-size: 1rem;
+
 
                 &:hover {
-                    background:rgba(255, 255, 255, 1);
-                    color: #000 !important;
+                    text-decoration: underline !important;
+                    line-height:20px;
                 }
             }
         }

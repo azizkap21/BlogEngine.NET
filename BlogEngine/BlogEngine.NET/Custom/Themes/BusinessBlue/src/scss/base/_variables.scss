@@ -1,21 +1,24 @@
 ﻿
 @import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Lobster|Open+Sans:300,400,600,700|Raleway:300,400,600,700';
-@import 'https://fonts.googleapis.com/css?family=Raleway:300,400,600,700';
+@import 'https://fonts.googleapis.com/css?family=Segoe+UI+Light:300,400,600,700';
+@import 'https://fonts.googleapis.com/css?family=Oswald:300,400,700';
 
-// fonts
+
 $font-family-base: Georgia, "Open Sans", sans-serif;
-$font-family-heading: 'Segoe UI', 'Open Sans', sans-serif, "Kreon", serif;
-$font-family-condensed: 'Segoe UI Condensed', 'Open Sans Condensed', 'Open Sans', sans-serif, "Kreon", serif;
+
+$font-family-heading:  Oswald, 'Open Sans', sans-serif, "Kreon", serif;
+$font-family-condensed: Oswald, 'Segoe UI Condensed', 'Open Sans Condensed', 'Open Sans', sans-serif;
 $font-family-post: Georgia, 'Times New Roman', Times, serif;
 $font-size-base: 1rem;
 $line-height-base: 1.8;
-$font-weight-normal: 400;
+$font-weight-normal: 300;
+$font-weight-medium: 400;
 $font-weight-bold: 700;
 
 // colors
-$color-body-left: #121a2f;
-$color-body-theme:#224162;
-$color-body-right: #dadbdd;
+$color-body-left: #0b151e;
+$color-body-theme: #222;
+$color-body-right: #232f3e;
 $color-widget: rgba(255, 255, 255, 0.1);
 $color-theme: #2A5CC8;
 $color-success: #8dc63f;
@@ -25,10 +28,12 @@ $color-primary: #2e9fff;
 $color-info: #5bc0de;
 $color-green: #8dc63f;
 $color-bar: #8dc63f;
-$color-post-heading: #fca461;
-$color-widget-header: #fca461;
-$color-form-header: #dd662e;
+$color-border: #658D1B;
+$color-post-heading: #F05A28;
+$color-widget-header: #F05A28;
+$color-form-header: #F05C2C;
 $color-link-hover: #5bc0de;
+$color-cloud: #1264c4;
 $color-post-body: #979798;
 
 

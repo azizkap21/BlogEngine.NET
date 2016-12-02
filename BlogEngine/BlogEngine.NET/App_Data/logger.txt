@@ -220,3 +220,49 @@ RazorHelper, ParseRazor, VirtualPath: /Custom/Widgets/TagCloud/widget.cshtml: Se
 *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
 Date: 10/2/2016 10:42:14 PM
 RazorHelper, ParseRazor, VirtualPath: /Custom/Widgets/TagCloud/widget.cshtml: Sequence contains no elements
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Date: 11/26/2016 8:31:17 PM
+Error updating category: : The parameterized query '(@blogid nvarchar(36),@catid nvarchar(36),@catname nvarchar(11),' expects the parameter '@description', which was not supplied.
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Date: 11/26/2016 8:32:56 PM
+PUT http://localhost:64079/api/posts/update/foo: The INSERT statement conflicted with the FOREIGN KEY constraint "FK_be_PostCategory_be_Categories". The conflict occurred in database "BlogEngine", table "dbo.be_Categories".
+The statement has been terminated.
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Date: 11/26/2016 8:32:57 PM
+PUT http://localhost:64079/api/posts/update/foo: The INSERT statement conflicted with the FOREIGN KEY constraint "FK_be_PostCategory_be_Categories". The conflict occurred in database "BlogEngine", table "dbo.be_Categories".
+The statement has been terminated.
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Date: 11/26/2016 8:32:58 PM
+PUT http://localhost:64079/api/posts/update/foo: The INSERT statement conflicted with the FOREIGN KEY constraint "FK_be_PostCategory_be_Categories". The conflict occurred in database "BlogEngine", table "dbo.be_Categories".
+The statement has been terminated.
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Date: 11/26/2016 8:32:59 PM
+PUT http://localhost:64079/api/posts/update/foo: The INSERT statement conflicted with the FOREIGN KEY constraint "FK_be_PostCategory_be_Categories". The conflict occurred in database "BlogEngine", table "dbo.be_Categories".
+The statement has been terminated.
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Date: 11/26/2016 8:33:18 PM
+PUT http://localhost:64079/api/posts/update/foo: The INSERT statement conflicted with the FOREIGN KEY constraint "FK_be_PostCategory_be_Categories". The conflict occurred in database "BlogEngine", table "dbo.be_Categories".
+The statement has been terminated.
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Date: 11/26/2016 8:33:32 PM
+PUT http://localhost:64079/api/posts/update/foo: The INSERT statement conflicted with the FOREIGN KEY constraint "FK_be_PostCategory_be_Categories". The conflict occurred in database "BlogEngine", table "dbo.be_Categories".
+The statement has been terminated.
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Date: 11/26/2016 10:05:55 PM
+PUT http://localhost:64079/api/posts/update/foo: The INSERT statement conflicted with the FOREIGN KEY constraint "FK_be_PostCategory_be_Categories". The conflict occurred in database "BlogEngine", table "dbo.be_Categories".
+The statement has been terminated.
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Date: 11/26/2016 10:07:37 PM
+POST http://localhost:64079/api/categories: Title must be unique
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Date: 11/26/2016 10:08:50 PM
+Error updating category: : The parameterized query '(@blogid nvarchar(36),@catid nvarchar(36),@catname nvarchar(10),' expects the parameter '@description', which was not supplied.
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Date: 11/26/2016 10:29:52 PM
+Error updating category: : The parameterized query '(@blogid nvarchar(36),@catid nvarchar(36),@catname nvarchar(4),@' expects the parameter '@description', which was not supplied.
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Date: 11/26/2016 10:29:52 PM
+CategoryRepository.Add: The parameterized query '(@blogid nvarchar(36),@catid nvarchar(36),@catname nvarchar(4),@' expects the parameter '@description', which was not supplied.
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+Date: 11/26/2016 10:30:16 PM
+POST http://localhost:64079/api/categories: Title must be unique
