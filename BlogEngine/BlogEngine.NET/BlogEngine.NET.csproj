@@ -1579,6 +1579,8 @@
     </Content>
     <Content Include="Custom\Themes\BusinessBlue\theme.xml" />
     <Content Include="Custom\Themes\BusinessBlue\WidgetContainer.ascx" />
+    <Content Include="Custom\Themes\Pakizah\content\fonts\fontawesome-webfont.svg" />
+    <Content Include="Custom\Themes\Pakizah\theme.xml" />
     <Content Include="Custom\Themes\Standard-2015\CommentForm.ascx" />
     <Content Include="Custom\Themes\Standard-2015\CommentView.ascx" />
     <Content Include="Custom\Themes\Standard-2015\css\rtl.css" />
@@ -1981,6 +1983,14 @@
     <Content Include="Custom\Themes\Boldy\fonts\fontello.woff" />
     <Content Include="Custom\Themes\Boldy\fonts\Yekan.woff" />
     <Content Include="Custom\Themes\Boldy\site.master" />
+    <Content Include="Custom\Themes\Pakizah\site.master" />
+    <Content Include="Custom\Themes\Pakizah\content\styles\base\_base.scss" />
+    <Content Include="Custom\Themes\Pakizah\content\styles\base\_variables.scss" />
+    <Content Include="Custom\Themes\Pakizah\content\fonts\fontawesome-webfont.eot" />
+    <Content Include="Custom\Themes\Pakizah\content\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Custom\Themes\Pakizah\content\fonts\fontawesome-webfont.woff" />
+    <Content Include="Custom\Themes\Pakizah\content\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Custom\Themes\Pakizah\content\fonts\FontAwesome.otf" />
     <None Include="Properties\PublishProfiles\azizweb.com - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\local.pubxml" />
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />
@@ -3656,6 +3666,9 @@
     <Folder Include="App_Data\files\" />
     <Folder Include="App_Data\packages\" />
     <Folder Include="bin\" />
+    <Folder Include="Custom\Themes\Pakizah\content\styles\modules\" />
+    <Folder Include="Custom\Themes\Pakizah\content\styles\sections\" />
+    <Folder Include="Custom\Themes\Pakizah\content\styles\widgets\" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />

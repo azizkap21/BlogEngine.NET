@@ -25,11 +25,11 @@
 
 .page-global,
 .well-global {
-    
     box-shadow: $shadow-normal;
     background: #fff;
     margin-bottom: 1.5rem;
     padding: 2rem;
+
     @media screen and (max-width: 64rem) {
         margin-bottom: .75rem;
         padding: 1rem;
@@ -38,15 +38,13 @@
     .page-global-title {
         font-size: 1.1rem;
         font-family: $font-family-heading !important;
-        color: $color-theme;
+        color: $color-post-header;
     }
 }
 
-.page-global>div>h1{
-        color: $color-theme;
-        font-weight: 400;
-        
-        
+.page-global > div > h1 {
+    color: $color-post-header;
+    font-weight: 300;
 }
 
 #trackbacks {

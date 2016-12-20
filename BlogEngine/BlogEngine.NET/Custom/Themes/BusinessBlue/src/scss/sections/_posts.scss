@@ -9,7 +9,7 @@
 
     .post-header {
         margin-bottom: 2rem;
-        border-bottom: 1px dotted $color-theme;
+        border-bottom: 1px dotted $color-post-header;
         padding-bottom: .5rem;
 
         .post-title {
@@ -21,11 +21,11 @@
 
             a {
                 text-decoration: none;
-                color: $color-theme;
+                color: $color-post-header;
 
 
                 &:hover {
-                    color: #111;
+                    color: darken($color-post-header, 10%);
                 }
             }
         }

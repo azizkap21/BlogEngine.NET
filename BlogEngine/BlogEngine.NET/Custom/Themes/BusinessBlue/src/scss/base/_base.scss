@@ -29,6 +29,7 @@ body {
     background: tranparent;
     float: none;
 }
+
 // typography
 h1,
 h2,
@@ -97,7 +98,7 @@ img {
 
 
 .navbar-brand:hover {
-    color: darken($color-widget-header, 20%) !important;
+    color: darken($color-widget-header, 10%) !important;
 }
 // container
 .container {
@@ -110,10 +111,10 @@ img {
 
 .nav-container {
     float: right;
-    color: $color-post-heading;
+    color: $color-post-header;
     background: $color-body-left;
     height: 80px;
-    width: 80rem;
+    //width: 80rem;
 }
 
 .main-nav {
@@ -125,7 +126,7 @@ img {
 }
 
 .navbar-inverse .navbar-nav > li > a {
-    color: $color-post-heading !important;
+    color: $color-widget-header !important;
     height: 50px;
     background: $color-body-left;
 }
@@ -135,7 +136,7 @@ img {
 }
 
 .navbar-inverse .navbar-nav > li > a:hover {
-    color: darken($color-post-heading, 20%) !important;
+    color: darken($color-widget-header, 10%) !important;
 }
 
 .well-global, #trackbacks {
@@ -185,12 +186,12 @@ img {
 }
 
 .page-global .page-global-title {
-    border-bottom: 1px solid $color-theme !important;
+    border-bottom: 1px solid $color-post-body !important;
     margin: 0 0 20px 0 !important;
     padding-bottom: 1rem !important;
-    font-weight: bold !important;
+    font-weight: 400 !important;
     font-size: 2.0rem !important;
-    color: $color-widget-header;
+    color: $color-post-header;
 }
 
 .comment {

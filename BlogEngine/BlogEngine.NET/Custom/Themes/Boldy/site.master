@@ -42,7 +42,7 @@
                     </ul>
 				</div>
 				<div id="topSearch">
-					<input type="submit" value="" id="searchsubmit" onkeypress="BlogEngine.search('<%=Utils.RelativeWebRoot%>');" onclick="BlogEngine.search('<%=Utils.RelativeWebRoot%>');return false;"/>
+					<input type="submit" value="" id="searchsubmit" onkeypress="BlogEngine.search('<%=Utils.RelativeWebRoot%>');" onclick="BlogEngine.search('<%= Utils.RelativeWebRoot %>' );" />
 					<input type="text" value="<%=BlogSettings.Instance.SearchDefaultText%>" 
 						onblur="$(this).animate({width: '100'}, 300 ); BlogEngine.searchClear('<%=BlogSettings.Instance.SearchDefaultText%>')" 
 						onfocus="$(this).animate({width: '215'}, 300 ); BlogEngine.searchClear('<%=BlogSettings.Instance.SearchDefaultText%>')" 

@@ -23,6 +23,13 @@
 <html>
 
 <head runat="server">
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-7773327634021552",
+    enable_page_level_ads: true
+  });
+</script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Kreon:400,700" rel="stylesheet">
@@ -124,8 +131,10 @@
 
                             <ul class="nav navbar-nav main-nav">
                                 <li><a runat="server" href="~/">Home</a></li>
+                                <li><a runat="server" href="~/blog">Blog</a></li>
                                 <li><a runat="server" href="~/About">About</a></li>
                                 <li><a runat="server" href="~/Contact">Contact</a></li>
+
                             </ul>
                         </div>
                     </div>

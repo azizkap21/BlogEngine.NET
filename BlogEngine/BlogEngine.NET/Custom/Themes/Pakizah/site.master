@@ -1,0 +1,59 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" %>
+
+<%@ Import Namespace="BlogEngine.Core" %>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link href="~/content/bootstrap.css" rel="stylesheet" type="text/css" />
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+    <link href="css/styles.css" rel="stylesheet" />
+
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+    <link href="css/ddsmoothmenu.css" rel="stylesheet" type="text/css" />
+    <link href="~/scripts/syntaxhighlighter/styles/shCore.css" rel="stylesheet" type="text/css" />
+    <link href="~/scripts/syntaxhighlighter/styles/shThemeDefault.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript" src="<%# Utils.ApplicationRelativeWebRoot %>scripts/bootstrap.js"></script>
+    <script type="text/javascript" src="<%# Utils.ApplicationRelativeWebRoot %>scripts/syntaxhighlighter/scripts/XRegExp.js"></script>
+    <script type="text/javascript" src="<%# Utils.ApplicationRelativeWebRoot %>scripts/syntaxhighlighter/scripts/shCore.js"></script>
+    <script type="text/javascript" src="<%# Utils.ApplicationRelativeWebRoot %>scripts/syntaxhighlighter/scripts/shAutoloader.js"></script>
+    <script type="text/javascript" src="<%# Utils.ApplicationRelativeWebRoot %>scripts/syntaxhighlighter/shActivator.js"></script>
+</head>
+<body>
+
+    <form runat="Server" class="body">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <aside>
+                        <section class="hidden-xs">
+                            
+                        </section>
+                    </aside>
+                </div>
+                <div class="col-sm-6">
+                    <asp:ContentPlaceHolder ID="cphBody" runat="server" />
+                </div>
+                <section class="hidden-md hidden-lg hidden-sm">
+
+                </section>
+                <div class="col-sm-3">
+
+                    <aside>
+                    </aside>
+                </div>
+            </div>
+        </div>
+
+
+
+    </form>
+</body>
+</html>

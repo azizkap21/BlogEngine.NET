@@ -78,7 +78,7 @@ img {
   float: none;
   width: 10rem;
   height: 50px;
-  color: #F05A28;
+  color: #1ABB9C;
   background: #0b151e;
   padding: 0;
   margin: 0;
@@ -86,7 +86,7 @@ img {
   vertical-align: central; }
 
 .navbar-brand:hover {
-  color: #a6320c !important; }
+  color: #148e77 !important; }
 
 .container {
   width: 100%;
@@ -97,10 +97,9 @@ img {
 
 .nav-container {
   float: right;
-  color: #F05A28;
+  color: #f05a28;
   background: #0b151e;
-  height: 80px;
-  width: 80rem; }
+  height: 80px; }
 
 .main-nav {
   float: left;
@@ -110,7 +109,7 @@ img {
   margin-right: 250px; }
 
 .navbar-inverse .navbar-nav > li > a {
-  color: #F05A28 !important;
+  color: #1ABB9C !important;
   height: 50px;
   background: #0b151e; }
 
@@ -118,7 +117,7 @@ img {
   background: #0b151e; }
 
 .navbar-inverse .navbar-nav > li > a:hover {
-  color: #a6320c !important; }
+  color: #148e77 !important; }
 
 .well-global, #trackbacks {
   background-color: #ffffff;
@@ -137,14 +136,14 @@ img {
   padding: 0 0px;
   border-bottom: 1px dotted #2A5CC8;
   line-height: 3rem;
-  color: #F05C2C;
+  color: #1ABB9C;
   margin-bottom: 20px; }
 
 .well-global .well-global-title h3 {
   margin: 0;
   font-weight: normal;
   line-height: 50px;
-  color: #F05A28; }
+  color: #1ABB9C; }
 
 .page-global {
   background-color: #ffffff;
@@ -163,12 +162,12 @@ img {
   text-align: justify; }
 
 .page-global .page-global-title {
-  border-bottom: 1px solid #2A5CC8 !important;
+  border-bottom: 1px solid #979798 !important;
   margin: 0 0 20px 0 !important;
   padding-bottom: 1rem !important;
-  font-weight: bold !important;
+  font-weight: 400 !important;
   font-size: 2.0rem !important;
-  color: #F05A28; }
+  color: #f05a28; }
 
 .comment {
   border: 7px solid #ddd; }
@@ -211,7 +210,7 @@ img {
     border-right: 7px solid #ddd; }
     .blog-wrapper > .blog-ad-bar > .ad-title {
       background: #222;
-      color: #F05A28;
+      color: #1ABB9C;
       padding: 10px;
       vertical-align: central;
       text-align: center;
@@ -444,11 +443,11 @@ img {
       height: 100%;
       line-height: 2rem;
       background: rgba(0, 0, 0, 0.07);
-      color: #fff;
+      color: #95f30b;
       border-radius: 100%;
       font-size: .875rem; }
       .social-network li i:hover {
-        background: #fff;
+        background: #95f30b;
         color: #000; }
 
 .post {
@@ -461,7 +460,7 @@ img {
   border: 7px solid #ddd; }
   .post .post-header {
     margin-bottom: 2rem;
-    border-bottom: 1px dotted #2A5CC8;
+    border-bottom: 1px dotted #f05a28;
     padding-bottom: .5rem; }
     .post .post-header .post-title {
       line-height: 1;
@@ -470,9 +469,9 @@ img {
       font-weight: 300; }
       .post .post-header .post-title a {
         text-decoration: none;
-        color: #2A5CC8; }
+        color: #f05a28; }
         .post .post-header .post-title a:hover {
-          color: #111; }
+          color: #d6410f; }
   .post .post-body, .post .post-body p {
     font-family: Georgia, "Times New Roman", Times, serif;
     font-size: 1.2rem; }
@@ -560,11 +559,11 @@ img {
   .well-global .page-global-title {
     font-size: 1.1rem;
     font-family: Oswald, "Open Sans", sans-serif, "Kreon", serif !important;
-    color: #2A5CC8; }
+    color: #f05a28; }
 
 .page-global > div > h1 {
-  color: #2A5CC8;
-  font-weight: 400; }
+  color: #f05a28;
+  font-weight: 300; }
 
 #trackbacks {
   display: none; }
@@ -635,7 +634,8 @@ img {
     .related-posts ul li a {
       font-family: Oswald, "Open Sans", sans-serif, "Kreon", serif;
       font-size: 1.5rem;
-      font-weight: normal; }
+      font-weight: normal;
+      color: #f05a28 !important; }
     .related-posts ul li:last-child {
       margin: 0; }
     .related-posts ul li:first-child {
@@ -975,7 +975,7 @@ img {
     margin: 0;
     padding-bottom: 1rem;
     margin-bottom: 1px;
-    color: #F05A28;
+    color: #1ABB9C;
     font-family: Oswald, "Segoe UI Condensed", "Open Sans Condensed", "Open Sans", sans-serif;
     font-weight: 300;
     text-transform: uppercase;
@@ -983,7 +983,7 @@ img {
     font-size: 1rem;
     line-height: 2.75rem;
     padding: 0 1rem;
-    border-bottom: dotted 1px #F05A28; }
+    border-bottom: dotted 1px #1ABB9C; }
   .widget .widget-content {
     background: rgba(255, 255, 255, 0.1);
     padding: 1.2rem !important;
@@ -1199,7 +1199,7 @@ label {
       background-color: rgba(255, 255, 255, 0.03); }
 
 .post-item-list {
-  border-bottom: 1px dotted #F05A28;
+  border-bottom: 1px dotted #1ABB9C;
   font-size: 0.75rem;
   padding: .2rem .2rem .5rem; }
   .post-item-list img {
